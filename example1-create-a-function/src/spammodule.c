@@ -41,7 +41,7 @@ static PyObject *SpamError;
 PyMODINIT_FUNC PyInit_spam(void){
     PyObject *m;
     m = PyModule_Create(&spammodule);
-    // return null to api if error occurred
+    // return null to api to raise error
     if (m==NULL) return NULL;
 
     // handling error
