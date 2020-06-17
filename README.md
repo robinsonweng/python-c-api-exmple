@@ -1,4 +1,4 @@
-# Python-C-api examples
+# Python-C-extension-via-python-api
 
 Some practice and demo about python c extension via python api, also some general notes.
 
