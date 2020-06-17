@@ -17,8 +17,9 @@ static PyObject *spam_cuteg41(PyObject *self, PyObject *args){
 // initalize globalvar method attribute
 static PyMethodDef SpamMethods[]={
     {"globalvar", // name of the method
-    spam_globalvar, // method bahave pointer
-    METH_VARARGS, // flag bits indicating how the call should be constructed
+    spam_globalvar, // the pointer of python function
+    METH_VARARGS, // flag bits indicating how the call should be constructed, It should be METH_VARGS or METH_KEYWORDS
+    // also, if setting keyword as input, then you should use PY_ParseTupleAndKeywords() to parse keywords
     "Execute all globalvar"}, // method __doc__
 
     {"cuteg41",spam_cuteg41,METH_VARARGS,"return a cute g41 string"},
